@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"/c/Users/1/OneDrive/Desktop/workspace/starterkit/my-app\\\" && ls components/ui/form.tsx 2>&1\",\"timeout\":5000,\"description\":\"form.tsx 생성 여부 확인\"}",
-  "error": "Exit code 2\nls: cannot access 'components/ui/form.tsx': No such file or directory",
-  "timestamp": "2026-05-24T07:56:35.336Z",
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"C:\\\\Users\\\\1\\\\OneDrive\\\\Desktop\\\\workspace\\\\starterkit\\\\my-app\"}",
+  "error": "EISDIR: illegal operation on a directory, read 'C:\\Users\\1\\OneDrive\\Desktop\\workspace\\starterkit\\my-app'",
+  "timestamp": "2026-05-24T08:13:00.611Z",
   "retry_count": 1
 }

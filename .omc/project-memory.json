@@ -116,21 +116,27 @@
   },
   "hotPaths": [
     {
-      "path": "eslint.config.mjs",
-      "accessCount": 3,
-      "lastAccessed": 1779608991995,
-      "type": "file"
+      "path": "",
+      "accessCount": 8,
+      "lastAccessed": 1779610423920,
+      "type": "directory"
     },
     {
       "path": "package.json",
-      "accessCount": 3,
-      "lastAccessed": 1779608993896,
+      "accessCount": 4,
+      "lastAccessed": 1779610380998,
+      "type": "file"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "accessCount": 4,
+      "lastAccessed": 1779610430389,
       "type": "file"
     },
     {
       "path": "app\\layout.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1779609106937,
+      "accessCount": 3,
+      "lastAccessed": 1779610412191,
       "type": "file"
     },
     {
@@ -146,33 +152,87 @@
       "type": "file"
     },
     {
+      "path": "app\\(dashboard)\\layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779610412678,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779610413442,
+      "type": "file"
+    },
+    {
+      "path": "next.config.ts",
+      "accessCount": 2,
+      "lastAccessed": 1779610413731,
+      "type": "file"
+    },
+    {
       "path": "tsconfig.json",
-      "accessCount": 1,
-      "lastAccessed": 1779606871674,
+      "accessCount": 2,
+      "lastAccessed": 1779610413858,
+      "type": "file"
+    },
+    {
+      "path": "lib\\constants.ts",
+      "accessCount": 2,
+      "lastAccessed": 1779610427966,
+      "type": "file"
+    },
+    {
+      "path": "lib\\utils.ts",
+      "accessCount": 2,
+      "lastAccessed": 1779610428742,
+      "type": "file"
+    },
+    {
+      "path": "lib\\format.ts",
+      "accessCount": 2,
+      "lastAccessed": 1779610429044,
+      "type": "file"
+    },
+    {
+      "path": "types\\index.ts",
+      "accessCount": 2,
+      "lastAccessed": 1779610429832,
+      "type": "file"
+    },
+    {
+      "path": "app\\globals.css",
+      "accessCount": 2,
+      "lastAccessed": 1779610430267,
+      "type": "file"
+    },
+    {
+      "path": "components\\layout\\app-sidebar.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779610436052,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\data-table.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779610437528,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\login\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779610438534,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\dashboard\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779610438727,
       "type": "file"
     },
     {
       "path": "components.json",
       "accessCount": 1,
       "lastAccessed": 1779606872316,
-      "type": "file"
-    },
-    {
-      "path": "app\\globals.css",
-      "accessCount": 1,
-      "lastAccessed": 1779606878232,
-      "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 1,
-      "lastAccessed": 1779606886110,
-      "type": "directory"
-    },
-    {
-      "path": "next.config.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779606892845,
       "type": "file"
     },
     {
@@ -186,12 +246,6 @@
       "accessCount": 1,
       "lastAccessed": 1779606923193,
       "type": "directory"
-    },
-    {
-      "path": "lib\\utils.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779606935016,
-      "type": "file"
     },
     {
       "path": ".prettierrc.json",
@@ -209,24 +263,6 @@
       "path": ".env.example",
       "accessCount": 1,
       "lastAccessed": 1779608778888,
-      "type": "file"
-    },
-    {
-      "path": "types\\index.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779608784247,
-      "type": "file"
-    },
-    {
-      "path": "lib\\constants.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779608796316,
-      "type": "file"
-    },
-    {
-      "path": "lib\\format.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779608807801,
       "type": "file"
     },
     {
@@ -257,12 +293,6 @@
       "path": "components\\layout\\user-nav.tsx",
       "accessCount": 1,
       "lastAccessed": 1779609006752,
-      "type": "file"
-    },
-    {
-      "path": "components\\layout\\app-sidebar.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609015582,
       "type": "file"
     },
     {
@@ -302,12 +332,6 @@
       "type": "file"
     },
     {
-      "path": "components\\common\\data-table.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609079304,
-      "type": "file"
-    },
-    {
       "path": "app\\not-found.tsx",
       "accessCount": 1,
       "lastAccessed": 1779609127808,
@@ -317,12 +341,6 @@
       "path": "app\\global-error.tsx",
       "accessCount": 1,
       "lastAccessed": 1779609134561,
-      "type": "file"
-    },
-    {
-      "path": "app\\(auth)\\layout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609146452,
       "type": "file"
     },
     {
@@ -350,21 +368,9 @@
       "type": "file"
     },
     {
-      "path": "app\\(auth)\\login\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609177016,
-      "type": "file"
-    },
-    {
       "path": "app\\(auth)\\register\\page.tsx",
       "accessCount": 1,
       "lastAccessed": 1779609189464,
-      "type": "file"
-    },
-    {
-      "path": "app\\(dashboard)\\layout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609192031,
       "type": "file"
     },
     {
@@ -389,12 +395,6 @@
       "path": "components\\ui\\form.tsx",
       "accessCount": 1,
       "lastAccessed": 1779609466797,
-      "type": "file"
-    },
-    {
-      "path": "app\\(dashboard)\\dashboard\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609541843,
       "type": "file"
     },
     {
