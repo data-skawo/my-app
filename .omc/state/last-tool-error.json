@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"\\n# 잘못 생성된 파일 삭제 후 올바른 경로에 재생성\\nRemove-Item -Recurse -Force \\\"C:\\\\Users\\\\1\\\\OneDrive\\\\Desktop\\\\workspace\\\\starterkit\\\\my-app\\\\app\\\\(dashboard)\\\\users\\\" 2>$null\\nRemove-Item -Recurse -Force...",
-  "error": "Exit code 127\n/usr/bin/bash: line 3: $null: ambiguous redirect\n/usr/bin/bash: line 4: $null: ambiguous redirect\n/usr/bin/bash: line 5: $null: ambiguous redirect\n/usr/bin/bash: line 7: New-Item: command not found\n/usr/bin/bash: line 7: Out-Null: command not found\n/usr/bin/bash: line 8: New-Item: command not found\n/usr/bin/bash: line 8: Out-Null: command not found\n/usr/bin/bash: line 9: New-Item: command not found\n/usr/bin/bash: line 9: Out-Null: command not found\n/usr/bin/bash: line 10: Write-Hos...",
-  "timestamp": "2026-05-24T08:27:50.306Z",
-  "retry_count": 1
-}
