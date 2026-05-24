@@ -1,5 +1,7 @@
 'use client'
 
+import { useState } from 'react'
+
 import {
   type ColumnDef,
   type ColumnFiltersState,
@@ -13,7 +15,6 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 import { ChevronDown, ChevronsUpDown, SortAsc, SortDesc } from 'lucide-react'
-import { useState } from 'react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -66,8 +67,8 @@ export function DataTable<TData, TValue>({
   const [sorting, setSorting] = useState<SortingState>([])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
-  const [rowSelection, setRowSelection] = useState({})
 
+  // eslint-disable-next-line react-hooks/incompatible-library -- TanStack Table v8과 React Compiler의 알려진 호환성 이슈 (라이브러리 업데이트 전까지 무시)
   const table = useReactTable({
     data,
     columns,
@@ -79,8 +80,7 @@ export function DataTable<TData, TValue>({
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     onColumnVisibilityChange: setColumnVisibility,
-    onRowSelectionChange: setRowSelection,
-    state: { sorting, columnFilters, columnVisibility, rowSelection },
+    state: { sorting, columnFilters, columnVisibility },
   })
 
   return (
@@ -175,8 +175,7 @@ export function DataTable<TData, TValue>({
       {/* 페이지네이션 */}
       <div className="flex items-center justify-between text-sm">
         <span className="text-muted-foreground">
-          {table.getFilteredSelectedRowModel().rows.length}개 선택 /{' '}
-          {table.getFilteredRowModel().rows.length}개 전체
+          전체 {table.getFilteredRowModel().rows.length}개
         </span>
         <div className="flex items-center gap-2">
           <Button

@@ -1,9 +1,11 @@
 'use client'
 
+import { useState } from 'react'
+
+import Link from 'next/link'
+
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Eye, EyeOff, Loader2 } from 'lucide-react'
-import Link from 'next/link'
-import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import * as z from 'zod'
@@ -43,10 +45,10 @@ export default function RegisterPage() {
 
   const { isSubmitting } = form.formState
 
-  async function onSubmit(values: RegisterFormValues) {
+  // _values: 실제 회원가입 로직 구현 시 사용 (현재는 TODO 플레이스홀더)
+  async function onSubmit(_values: RegisterFormValues) {
     try {
       // TODO: 실제 회원가입 로직 구현 (Server Action 호출 등)
-      console.log('회원가입 시도:', values.email)
       await new Promise((resolve) => setTimeout(resolve, 1000))
       toast.success('회원가입이 완료되었습니다!')
     } catch {

@@ -1,63 +1,13 @@
-'use client'
-
-import { type ColumnDef } from '@tanstack/react-table'
 import { BarChart3, ShoppingCart, TrendingUp, Users } from 'lucide-react'
 
 import { DataTable } from '@/components/common/data-table'
 import { PageHeader } from '@/components/common/page-header'
 import { StatCard } from '@/components/common/stat-card'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
-// ── 샘플 데이터 타입 ──────────────────────────────
-interface Order {
-  id: string
-  customer: string
-  status: '완료' | '처리중' | '취소'
-  amount: number
-  date: string
-}
-
-const orders: Order[] = [
-  { id: 'ORD-001', customer: '김민준', status: '완료', amount: 128000, date: '2025-05-20' },
-  { id: 'ORD-002', customer: '이서연', status: '처리중', amount: 75000, date: '2025-05-21' },
-  { id: 'ORD-003', customer: '박지호', status: '완료', amount: 240000, date: '2025-05-22' },
-  { id: 'ORD-004', customer: '최수아', status: '취소', amount: 55000, date: '2025-05-22' },
-  { id: 'ORD-005', customer: '정현우', status: '처리중', amount: 185000, date: '2025-05-23' },
-  { id: 'ORD-006', customer: '윤지아', status: '완료', amount: 320000, date: '2025-05-23' },
-  { id: 'ORD-007', customer: '임도현', status: '완료', amount: 98000, date: '2025-05-24' },
-]
-
-const columns: ColumnDef<Order>[] = [
-  { accessorKey: 'id', header: '주문 ID' },
-  { accessorKey: 'customer', header: '고객명' },
-  {
-    accessorKey: 'status',
-    header: '상태',
-    cell: ({ row }) => {
-      const status = row.getValue<Order['status']>('status')
-      return (
-        <Badge
-          variant={
-            status === '완료' ? 'default' : status === '처리중' ? 'secondary' : 'destructive'
-          }
-        >
-          {status}
-        </Badge>
-      )
-    },
-  },
-  {
-    accessorKey: 'amount',
-    header: '금액',
-    cell: ({ row }) =>
-      new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(
-        row.getValue('amount')
-      ),
-  },
-  { accessorKey: 'date', header: '날짜' },
-]
+// columns와 orders는 Client Component 파일에 정의 (RSC → Client Component 함수 전달 제약 해결)
+import { columns, orders } from './columns'
 
 const stats = [
   {

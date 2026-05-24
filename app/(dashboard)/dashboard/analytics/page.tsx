@@ -1,9 +1,10 @@
 import { BarChart3 } from 'lucide-react'
+import type { Metadata } from 'next'
 
 import { EmptyState } from '@/components/common/empty-state'
 import { PageHeader } from '@/components/common/page-header'
 
-export const metadata = { title: '통계' }
+export const metadata: Metadata = { title: '통계' }
 
 export default function AnalyticsPage() {
   return (

@@ -7,6 +7,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  /* --font-sans는 app/layout.tsx의 notoSans.variable이 <html> 클래스를 통해 주입됩니다 */
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-heading);

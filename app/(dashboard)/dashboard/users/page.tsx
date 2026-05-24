@@ -1,9 +1,10 @@
 import { Users } from 'lucide-react'
+import type { Metadata } from 'next'
 
 import { EmptyState } from '@/components/common/empty-state'
 import { PageHeader } from '@/components/common/page-header'
 
-export const metadata = { title: '사용자' }
+export const metadata: Metadata = { title: '사용자' }
 
 export default function UsersPage() {
   return (

@@ -1,14 +1,32 @@
+import { Loader2 } from 'lucide-react'
+
 import { Skeleton } from '@/components/ui/skeleton'
 import { cn } from '@/lib/utils'
 import type { WithClassName } from '@/types'
 
-interface LoadingSpinnerProps extends WithClassName {
+interface ContentSkeletonProps extends WithClassName {
   /** 스켈레톤 행 수 */
   rows?: number
 }
 
-/** 일반 목록/콘텐츠 로딩용 스켈레톤 */
-export function LoadingSpinner({ rows = 5, className }: LoadingSpinnerProps) {
+/**
+ * 실제 스피너 아이콘을 표시하는 로딩 컴포넌트
+ * @example <LoadingSpinner />
+ * @example <LoadingSpinner className="h-8 w-8 text-primary" />
+ */
+export function LoadingSpinner({ className }: WithClassName) {
+  return (
+    <div className={cn('flex items-center justify-center', className)}>
+      <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+    </div>
+  )
+}
+
+/**
+ * 일반 목록/콘텐츠 로딩용 스켈레톤
+ * @example <ContentSkeleton rows={3} />
+ */
+export function ContentSkeleton({ rows = 5, className }: ContentSkeletonProps) {
   return (
     <div className={cn('space-y-3', className)}>
       {Array.from({ length: rows }).map((_, i) => (
@@ -37,7 +55,11 @@ export function StatCardSkeleton({ className }: WithClassName) {
 }
 
 /** 테이블 로딩용 스켈레톤 */
-export function TableSkeleton({ rows = 5, cols = 4, className }: LoadingSpinnerProps & { cols?: number }) {
+export function TableSkeleton({
+  rows = 5,
+  cols = 4,
+  className,
+}: ContentSkeletonProps & { cols?: number }) {
   return (
     <div className={cn('rounded-lg border', className)}>
       {/* 헤더 */}

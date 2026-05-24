@@ -19,7 +19,7 @@ interface StatCardProps extends StatCardData, WithClassName {}
  */
 export function StatCard({ title, value, description, trend, icon: Icon, className }: StatCardProps) {
   return (
-    <Card className={cn('', className)}>
+    <Card className={cn(className)}>
       <CardHeader className="flex flex-row items-center justify-between pb-2">
         <CardTitle className="text-muted-foreground text-sm font-medium">{title}</CardTitle>
         {Icon && <Icon className="text-muted-foreground h-4 w-4" />}

@@ -42,7 +42,8 @@ export function AppSidebar() {
       {/* 내비게이션 */}
       <SidebarContent>
         {navGroups.map((group, i) => (
-          <SidebarGroup key={i}>
+          // group.title이 있으면 그룹 제목을 key로 사용, 없으면 인덱스 fallback
+          <SidebarGroup key={group.title ?? i}>
             {group.title && <SidebarGroupLabel>{group.title}</SidebarGroupLabel>}
             <SidebarGroupContent>
               <SidebarMenu>

@@ -8,8 +8,8 @@ export default function RegisterLoading() {
         <Skeleton className="h-4 w-52" />
       </div>
       <div className="space-y-4">
-        {Array.from({ length: 4 }).map((_, i) => (
-          <div key={i} className="space-y-2">
+        {(['name', 'email', 'password', 'confirmPassword'] as const).map((field) => (
+          <div key={field} className="space-y-2">
             <Skeleton className="h-4 w-20" />
             <Skeleton className="h-10 w-full" />
           </div>

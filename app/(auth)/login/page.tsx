@@ -1,9 +1,11 @@
 'use client'
 
+import { useState } from 'react'
+
+import Link from 'next/link'
+
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Eye, EyeOff, Loader2 } from 'lucide-react'
-import Link from 'next/link'
-import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import * as z from 'zod'
@@ -36,10 +38,10 @@ export default function LoginPage() {
 
   const { isSubmitting } = form.formState
 
-  async function onSubmit(values: LoginFormValues) {
+  // _values: 실제 인증 로직 구현 시 사용 (현재는 TODO 플레이스홀더)
+  async function onSubmit(_values: LoginFormValues) {
     try {
       // TODO: 실제 인증 로직 구현 (예: NextAuth signIn, Server Action 호출 등)
-      console.log('로그인 시도:', values.email)
       await new Promise((resolve) => setTimeout(resolve, 1000)) // 시뮬레이션
       toast.success('로그인되었습니다!')
     } catch {

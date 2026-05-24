@@ -23,13 +23,17 @@ interface UserNavProps {
 
 /** 헤더 우측 유저 아바타 + 드롭다운 메뉴 */
 export function UserNav({ user }: UserNavProps) {
-  const initials =
-    user?.name
-      ?.split(' ')
-      .map((n) => n[0])
-      .join('')
-      .toUpperCase()
-      .slice(0, 2) ?? 'U'
+  // 한국어 이름은 공백이 없으므로 앞 2글자 사용, 영어 이름은 첫 두 단어의 이니셜 추출
+  const initials = user?.name
+    ? /[가-힣]/.test(user.name)
+      ? user.name.slice(0, 2)
+      : user.name
+          .split(' ')
+          .map((n) => n[0])
+          .join('')
+          .toUpperCase()
+          .slice(0, 2)
+    : 'U'
 
   return (
     <DropdownMenu>
