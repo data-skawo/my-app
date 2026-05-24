@@ -1,0 +1,420 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1779606034363,
+  "projectRoot": "C:\\Users\\1\\OneDrive\\Desktop\\workspace\\starterkit\\my-app",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "16.2.6",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.4",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "eslint"
+    }
+  },
+  "conventions": {
+    "namingStyle": "camelCase",
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "app",
+      "components",
+      "lib",
+      "public"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "app": {
+      "path": "app",
+      "purpose": "Application code",
+      "fileCount": 4,
+      "lastAccessed": 1779606034217,
+      "keyFiles": [
+        "favicon.ico",
+        "globals.css",
+        "layout.tsx",
+        "page.tsx"
+      ]
+    },
+    "components": {
+      "path": "components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1779606034218,
+      "keyFiles": []
+    },
+    "lib": {
+      "path": "lib",
+      "purpose": "Library code",
+      "fileCount": 1,
+      "lastAccessed": 1779606034252,
+      "keyFiles": [
+        "utils.ts"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 5,
+      "lastAccessed": 1779606034253,
+      "keyFiles": [
+        "file.svg",
+        "globe.svg",
+        "next.svg",
+        "vercel.svg",
+        "window.svg"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "eslint.config.mjs",
+      "accessCount": 3,
+      "lastAccessed": 1779608991995,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 3,
+      "lastAccessed": 1779608993896,
+      "type": "file"
+    },
+    {
+      "path": "app\\layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779609106937,
+      "type": "file"
+    },
+    {
+      "path": "app\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779609123633,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779609550840,
+      "type": "file"
+    },
+    {
+      "path": "tsconfig.json",
+      "accessCount": 1,
+      "lastAccessed": 1779606871674,
+      "type": "file"
+    },
+    {
+      "path": "components.json",
+      "accessCount": 1,
+      "lastAccessed": 1779606872316,
+      "type": "file"
+    },
+    {
+      "path": "app\\globals.css",
+      "accessCount": 1,
+      "lastAccessed": 1779606878232,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1779606886110,
+      "type": "directory"
+    },
+    {
+      "path": "next.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779606892845,
+      "type": "file"
+    },
+    {
+      "path": "lib",
+      "accessCount": 1,
+      "lastAccessed": 1779606922812,
+      "type": "directory"
+    },
+    {
+      "path": "components",
+      "accessCount": 1,
+      "lastAccessed": 1779606923193,
+      "type": "directory"
+    },
+    {
+      "path": "lib\\utils.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779606935016,
+      "type": "file"
+    },
+    {
+      "path": ".prettierrc.json",
+      "accessCount": 1,
+      "lastAccessed": 1779608772990,
+      "type": "file"
+    },
+    {
+      "path": ".prettierignore",
+      "accessCount": 1,
+      "lastAccessed": 1779608775425,
+      "type": "file"
+    },
+    {
+      "path": ".env.example",
+      "accessCount": 1,
+      "lastAccessed": 1779608778888,
+      "type": "file"
+    },
+    {
+      "path": "types\\index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779608784247,
+      "type": "file"
+    },
+    {
+      "path": "lib\\constants.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779608796316,
+      "type": "file"
+    },
+    {
+      "path": "lib\\format.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779608807801,
+      "type": "file"
+    },
+    {
+      "path": "hooks\\use-debounce.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779608814397,
+      "type": "file"
+    },
+    {
+      "path": "actions\\example.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779608822794,
+      "type": "file"
+    },
+    {
+      "path": "hooks\\use-mobile.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779608834852,
+      "type": "file"
+    },
+    {
+      "path": "components\\layout\\theme-toggle.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779608999005,
+      "type": "file"
+    },
+    {
+      "path": "components\\layout\\user-nav.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609006752,
+      "type": "file"
+    },
+    {
+      "path": "components\\layout\\app-sidebar.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609015582,
+      "type": "file"
+    },
+    {
+      "path": "components\\layout\\app-header.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609024115,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\page-header.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609034627,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\stat-card.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609042034,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\empty-state.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609046397,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\loading-spinner.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609053843,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\data-list.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609059050,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\data-table.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609079304,
+      "type": "file"
+    },
+    {
+      "path": "app\\not-found.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609127808,
+      "type": "file"
+    },
+    {
+      "path": "app\\global-error.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609134561,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609146452,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\login\\loading.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609149606,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\register\\loading.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609151471,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\error.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609157547,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\loading.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609160598,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\login\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609177016,
+      "type": "file"
+    },
+    {
+      "path": "app\\(auth)\\register\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609189464,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609192031,
+      "type": "file"
+    },
+    {
+      "path": "components\\ui",
+      "accessCount": 1,
+      "lastAccessed": 1779609336815,
+      "type": "directory"
+    },
+    {
+      "path": "components\\ui\\calendar.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609372012,
+      "type": "file"
+    },
+    {
+      "path": "components\\ui\\resizable.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609372065,
+      "type": "file"
+    },
+    {
+      "path": "components\\ui\\form.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609466797,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\dashboard\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609541843,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\dashboard\\loading.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609545097,
+      "type": "file"
+    },
+    {
+      "path": "app\\(dashboard)\\dashboard\\error.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1779609549566,
+      "type": "file"
+    },
+    {
+      "path": "types\\vendor.d.ts",
+      "accessCount": 1,
+      "lastAccessed": 1779609616779,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

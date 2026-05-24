@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"/c/Users/1/OneDrive/Desktop/workspace/starterkit/my-app\\\" && ls components/ui/form.tsx 2>&1\",\"timeout\":5000,\"description\":\"form.tsx 생성 여부 확인\"}",
+  "error": "Exit code 2\nls: cannot access 'components/ui/form.tsx': No such file or directory",
+  "timestamp": "2026-05-24T07:56:35.336Z",
+  "retry_count": 1
+}
