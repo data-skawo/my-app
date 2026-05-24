@@ -134,6 +134,12 @@
       "type": "file"
     },
     {
+      "path": "app\\(dashboard)\\dashboard\\page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1779611171679,
+      "type": "file"
+    },
+    {
       "path": "app\\layout.tsx",
       "accessCount": 3,
       "lastAccessed": 1779610412191,
@@ -224,9 +230,15 @@
       "type": "file"
     },
     {
-      "path": "app\\(dashboard)\\dashboard\\page.tsx",
+      "path": "components\\common\\empty-state.tsx",
       "accessCount": 2,
-      "lastAccessed": 1779610438727,
+      "lastAccessed": 1779611152519,
+      "type": "file"
+    },
+    {
+      "path": "components\\common\\page-header.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1779611152769,
       "type": "file"
     },
     {
@@ -302,21 +314,9 @@
       "type": "file"
     },
     {
-      "path": "components\\common\\page-header.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609034627,
-      "type": "file"
-    },
-    {
       "path": "components\\common\\stat-card.tsx",
       "accessCount": 1,
       "lastAccessed": 1779609042034,
-      "type": "file"
-    },
-    {
-      "path": "components\\common\\empty-state.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1779609046397,
       "type": "file"
     },
     {

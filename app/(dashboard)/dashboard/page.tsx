@@ -1,3 +1,5 @@
+'use client'
+
 import { type ColumnDef } from '@tanstack/react-table'
 import { BarChart3, ShoppingCart, TrendingUp, Users } from 'lucide-react'
 

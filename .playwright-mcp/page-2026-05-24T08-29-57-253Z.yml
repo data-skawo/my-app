@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "M My App v1.0.0" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e10]: M
+            - generic [ref=e11]:
+              - generic [ref=e12]: My App
+              - generic [ref=e13]: v1.0.0
+      - generic [ref=e14]:
+        - list [ref=e17]:
+          - listitem [ref=e18]:
+            - link "홈" [ref=e19] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e23]: 홈
+          - listitem [ref=e24]:
+            - link "대시보드" [ref=e25] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e26]
+              - generic [ref=e31]: 대시보드
+        - generic [ref=e32]:
+          - generic [ref=e33]: 관리
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "사용자" [ref=e37] [cursor=pointer]:
+                - /url: /dashboard/users
+                - img [ref=e38]
+                - generic [ref=e43]: 사용자
+            - listitem [ref=e44]:
+              - link "통계" [ref=e45] [cursor=pointer]:
+                - /url: /dashboard/analytics
+                - img [ref=e46]
+                - generic [ref=e48]: 통계
+        - generic [ref=e49]:
+          - generic [ref=e50]: 설정
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - link "설정" [ref=e54] [cursor=pointer]:
+                - /url: /dashboard/settings
+                - img [ref=e55]
+                - generic [ref=e58]: 설정
+      - list [ref=e60]:
+        - listitem [ref=e61]:
+          - button "© 2025 My App" [ref=e62]
+      - button "Toggle Sidebar" [ref=e63]
+    - main [ref=e64]:
+      - generic [ref=e65]:
+        - button "Toggle Sidebar" [ref=e66]:
+          - img
+          - generic [ref=e67]: Toggle Sidebar
+        - navigation "breadcrumb" [ref=e68]:
+          - list [ref=e69]:
+            - listitem [ref=e70]:
+              - link "dashboard" [ref=e71] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e72]:
+              - img [ref=e73]
+            - listitem [ref=e75]:
+              - link "settings" [disabled] [ref=e76]
+        - generic [ref=e77]:
+          - button "테마 변경" [ref=e78]:
+            - img
+            - generic [ref=e79]: 테마 변경
+          - button "홍" [ref=e80]:
+            - generic [ref=e82]: 홍
+      - main [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e86]:
+            - heading "설정" [level=1] [ref=e87]
+            - paragraph [ref=e88]: 애플리케이션 환경을 설정합니다.
+          - generic [ref=e89]:
+            - img [ref=e91]
+            - heading "설정 항목이 없습니다" [level=3] [ref=e94]
+            - paragraph [ref=e95]: 아직 구성된 설정이 없습니다.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e101] [cursor=pointer]:
+    - img [ref=e102]
